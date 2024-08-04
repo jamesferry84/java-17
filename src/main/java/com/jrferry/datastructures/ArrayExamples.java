@@ -11,4 +11,17 @@ public class ArrayExamples {
         }
     }
 
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int number : anonamousArray) {
+            sb.append(" " + number);
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
 }
